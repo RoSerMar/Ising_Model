@@ -22,9 +22,6 @@ class IsingModel:
         self.magnetizations = []
 
     def calc_ener_spin(self, i, j):
-        # calcular a energia de um spin
-        # ...
-
         energy = 0
         return energy
 
@@ -46,6 +43,7 @@ class IsingModel:
         # iterar com o método de Metropolis Hastings
         for i in tqdm(range(n_iter), desc=f"L={self.L:6d}, T={self.T:8f}"):
             # ...
+            pass
 
     @property
     def energy(self):
